@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>AC - IMPORT DASHBOARD</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='Index.css'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src='NewWindow.js'></script>
+   </head>
+   <body onload = "myFunction()">  
+      <script></script>
+      <div class="container">
+         <nav>
+            <ul>
+               <li>
+                  <a href="#" class="logo">
+                  <img src="//C://Users//admin/Desktop//ACCrawlerDashBoard_Final//src//ACDashboard//logo.jpg" alt="">
+                  <span class="nav-item">AC - IMPORT DASHBOARD</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" onclick="refreshPage()">
+                  <i class="fas fa-home"></i>
+                  <span class="nav-item">Home</span>
+                  </a>
+               </li>
+               <!-- <li>
+                  <a href="#" onclick="NewWindow()">
+                  <i class="fas fa-user"></i>
+                  <span class="nav-item">Profile</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" onclick="NewWindow()">
+                  <i class="fas fa-wallet"></i>
+                  <span class="nav-item">Configuration</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" onclick="NewWindow()">
+                  <i class="fas fa-cog"></i>
+                  <span class="nav-item">Settings</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                  <i class="fas fa-sign-out-alt"></i>
+                  <span class="nav-item">Logout</span>
+                  </a>
+               </li> -->
+            </ul>
+         </nav>
+
+         <!-- IMPORT - CLIENTS ---------------------------------------------- -->
+         <section class="main">
+            <div class="main-top">
+               <h1>IMPORT - Clients</h1>
+            </div>
+
+            <!-- ----------------------- Client 1 ----------------------- -->
+            <div class="main-clients">
+               <div class="card" id="client1">
+                  <i class="fas fa-laptop-code"></i>
+                  <h3>Client 1</h3>
+                  <div class="client1-container">
+                     <img src="//C://Users//admin/Desktop//ACCrawlerDashBoard_Final//src//ACDashboard//client.jpg" class="client1">
+                  </div>
+                  <!-- <div id="loader"></div> -->
+                  <div style="display:none;" id="myDiv" class="animate-bottom"></div>
+                  <div class="start1-button-crawler">
+                     <button id="startButton1" onclick="StartFunction();toggleButtons('startButton1', 'stopButton1', true)">Start</button>
+                  </div>
+                  <div class="stop2-button-crawler">
+                     <button id="stopButton1" onclick="StopFunction();toggleButtons('startButton1', 'stopButton1', false)">Stop</button>
+                  </div>
+               </div>
+
+                  <!-- ----------------------- Client 2 ----------------------- -->
+               <div class="card" id="client2">
+                  <i class="fas fa-laptop-code"></i>
+                  <h3>Client 2</h3>
+                  <div class="client2-container">
+                     <img src="//C://Users//admin/Desktop//ACCrawlerDashBoard_Final//src//ACDashboard//client.jpg" class="client2">
+                  </div>
+                  <!-- <div id="loader1"></div> -->
+                  <div style="display:none;" id="myDiv" class="animate-bottom"></div>
+                  <div class="start3-button-crawler">
+                     <button id="startButton2" onclick="StartFunction();toggleButtons('startButton2', 'stopButton2', true)">Start</button>
+                  </div>
+                  <div class="stop4-button-crawler">
+                     <button id="stopButton2" onclick="StopFunction()">Stop</button>
+                  </div>
+               </div>
+
+               <!-- ----------------------- Client 3 ----------------------- -->
+               <div class="card" id="client3">
+                  <i class="fas fa-laptop-code"></i>
+                  <h3>Client 3</h3>
+                  <div class="client3-container">
+                     <img src="//C://Users//admin/Desktop//ACCrawlerDashBoard_Final//src//ACDashboard//client.jpg" class="client3">
+                  </div>
+                  <!-- <div id="loader2"></div> -->
+                  <div style="display:none;" id="myDiv" class="animate-bottom"></div>
+                  <div class="start5-button-crawler">
+                     <button id="startButton3" onclick="StartFunction();toggleButtons('startButton3', 'stopButton3', true)">Start</button>
+                  </div>
+                  <div class="stop6-button-crawler">
+                     <button id="stopButton3" onclick="StopFunction();toggleButtons('startButton3', 'stopButton3', true)">Stop</button>
+                  </div>
+               </div>
+            </div>
+
+
+                  <!-- LAST IMPORTS ------------------------------------------------------------------------------------------------------------------ -->
+            <section class="main-crawlers">
+               <h1>Last import</h1>
+               <div class="crawler-box">
+                  <ul>
+                     <!-- <li id="inProgress" onclick="toggleCrawler('inProgress')">In Progress</li> -->
+                     <li id="finished" onclick="toggleCrawler('finished')">Finished</li>
+
+                  </ul>
+                  <!-- ----------------------- Data Imports ----------------------- -->
+                  <div class="crawler">
+                     <div class="box-data-imports">
+                        <h3>Data Imports</h3>
+                           <div class="client1-portal-container">
+                              <ul>
+                                 <li>Client 1 is ready to flush!</li> 
+                                 <li>Client 2 is ready to flush!</li>
+                                 <li>Client 3 is ready to flush!</li>
+                              </ul>
+                           </div>
+                           <div class="flush-button-client1">
+                              <button id = "flushButton" onclick="openFlushPopup()">Flush</button>
+                           </div>
+                     </div>
+
+                     <!-- ----------------------- Import Info ----------------------- -->
+                     <div class="box-import-info">
+                        <h3>Import Info</h3>
+                        <div class="client2-portal-container">
+                        <ul>
+                           <li>Import0_Config is done</li> 
+                           <li>Import1_Config is done</li>
+                           <li>Import2_Config is done</li>
+                        </ul></div>
+                     </div>
+               </div>
+               <!-- <div class="crawler" id="crawler-Finished"></div> -->
+            </section>
+         </section>
+      </div>
+         
+      <!------------------------------- Popup Window ------------------------------->
+      <div id="popup-stop" style = "display: none;">
+         <div id="popup-content-stop">
+            <div id="xClose1" onclick="closePopupStop()">X</div>
+            <h2 style="font-family: \'Poppins\', sans-serif;">You want to stop the progress?</h2>
+            <div class="button-container"></div>
+            <div class = "yes-button"><button id="yesButton" onclick="confirmAction(true)">Yes</button></div>
+            <div class = "no-button"><button id="noButton" onclick="confirmAction(false)">No</button></div>
+         </div>
+      </div>
+      <div id="popup-start" style = "display: none;">
+         <div id="popup-content-start">
+            <div id="xClose2" onclick="closePopupStart()">X</div>
+            <div class = "theme-structure big-file-manager">
+               <ul>
+                  <li class = "file-sub-active show-up"><b>Configurations</b>
+                  <div class = "fa fa-folder">   
+                  <li id = "import"><b> Data-Import</b></li></div>
+                     <ul>
+
+                        <div class = "fa fa-file" onclick = "hiddeDataImport">
+                        <li id = "importData">Import_Config</li>
+                     </div>
+
+                  <br>
+                  <br>
+
+                  <li id = "import1" class = "fa fa-folder"><b> Data-Import1</b></li>
+                     <ul>
+                        <li id = "importData1" class = "fa fa-file"> Import1_Config</li>
+
+                  <br>
+                  <br>
+
+                  <li id = "import2" class = "fa fa-folder"><b> Data-Import2</b></li>
+                     <ul>
+                        <li id = "importData2" class = "fa fa-file"> Import2_Config</li>
+
+            </div>
+         </div>
+      </div>
+      <!------------------------------- Flush Window ------------------------------->
+      <div id = "popup-flush" style ="display: none;">
+         <div id = "popup-content-flush">
+            <div id="xClose3" onclick="closePopupFlush()">X</div>
+            <h2 style="font-family: \'Poppins\', sans-serif;">Do you want to flush the import?</h2>
+            <div class="flush-container"></div>
+            <div class = "flush-button"><button id="flushwindowButton" onclick="flushConfirmAction(true)">Yes</button></div>
+         </div>
+
+      </div>
+      </div>
+   </body>
+</html>

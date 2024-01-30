@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+}
+
+body{
+    background: #dfe9f5;
+}
+
+.container{
+    display: flex;
+}
+
+.html{
+    color: rgba(25,94,54);
+}
+
+h1{
+    margin-bottom: 5px;
+ }
+
+nav{
+    position: relative;
+    top: 13px;
+    bottom: 0;
+    height: 97vh;
+    left: 0;
+    background: white;
+    width: 375px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+a{
+    position: relative;
+    color: rgb(85,85,83);
+    font-size: 14px;
+    display: table;
+    width: 280px;
+    padding: 10px;
+}
+
+nav .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 10px;
+}
+
+
+a:hover{
+    background: rgb(212, 210, 210);
+    border-radius: 6px;
+    object-fit: contain;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+width: 50px;
+height: 50px;
+border-radius: 15%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.box h3{
+    display: flex;
+    margin: 10px;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+/*--------------------------------- Import Clients ------------------------------ */
+.main{
+    position: relative;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .main h1{
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.main-top{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+ .main-top i{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    color: rgb(110, 109, 109);
+    cursor: pointer;
+ }
+
+ .main-clients{
+    height:374px;
+    display: flex;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    justify-content: center;   
+}
+
+.main-clients .card{
+
+    margin: 10px;
+    width: 20%;
+    background: #f3e4e4;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.main-clients .card i{
+    font-size: 22px;
+    padding: 10px;
+}
+
+.main-clients .card h3{
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.main-clients p{
+    font-size: 12px;
+}
+/*--------------------------------- Import Clients ------------------------------ */
+
+#import {
+    cursor: pointer;
+}
+
+#importData:hover {
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#importData1:hover {
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#importData2:hover {
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.fa fa-folder {
+    color: yellow;
+}
+
+
+/*--------------------------------- CLIENT 1 ------------------------------ */
+.client1-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.client1{
+    width: 120px;
+    height: 95px;
+    object-fit: contain;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+
+.start1-button-crawler button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.stop2-button-crawler button{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.card .start1-button-crawler:hover button{
+    background-color: green;
+    color: white;
+}
+
+.card .stop2-button-crawler:hover button{
+    background-color: red;
+    color: white;
+}
+
+/* ------ LOADER FUNCTION ------ */
+#loader {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3;
+    margin-left: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  #loader1{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3;
+    margin-left: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  #loader2 {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3;
+    margin-left: 120px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+@media (max-width: 600px) {
+    .box i{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .box i{
+        font-size: 4rem;
+    }
+
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+/* ------ LOADER FUNCTION ------ */
+
+/*--------------------------------- CLIENT 2 ------------------------------ */
+.client2-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.client2{
+    width: 120px;
+    height: 95px;
+    object-fit: contain;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.start3-button-crawler button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.stop4-button-crawler button{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.card .start3-button-crawler:hover button{
+    background-color: green;
+    color: white;
+}
+
+.card .stop4-button-crawler:hover button{
+    background-color: red;
+    color: white;
+}
+
+/*--------------------------------- CLIENT 3 ------------------------------ */
+.client3-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.client3{
+    width: 120px;
+    height: 95px;
+    object-fit: contain;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.start5-button-crawler button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.stop6-button-crawler button{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.card .start5-button-crawler:hover button{
+    background-color: green;
+    color: white;
+}
+
+.card .stop6-button-crawler:hover button{
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+/*--------------------------------- LAST IMPORT ------------------------------ */
+
+.main-crawlers{
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.main-crawlers .card .start-button-crawler{
+    display: flex;
+}
+
+.crawler-ul .active{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.crawler-box .crawler{
+    display: flex;
+}
+
+.crawler-box{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.crawler-box ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.crawler-box ul li{
+    margin: 10px;
+    color: grey;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+.box-import-info{
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235,233,233);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+}
+
+.box-data-imports{
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235,233,233);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    /* justify-content: space-evenly; */
+    justify-content: flex-start;
+}
+
+.box-data-imports p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.box-import-info p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.box-data-imports button{
+    background: darkcyan;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.box-import-info h3{
+margin-top: -2.5px;
+}
+
+.box-data-imports h3{
+    margin-top: -2.5px;
+}
+
+#crawler-finished {
+    display: none;
+}
+
+#finished:hover{
+    background: rgb(212, 210, 210);
+    border-radius: 3px;
+}
+
+
+/*--------------------------------- CLIENT 1 ------------------------------ */
+
+.client1-portal-container ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+.client2-portal-container ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+.flush-button-client1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+/*--------------------------------- CLIENT 2 ------------------------------ */
+.client2-portal-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+#check-button{
+    display: flex;
+    position: relative;
+    font-size: 50px;
+    color: #3498db;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*----------------- POPUP WINDOW -----------------*/
+#popup-stop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+    background-color: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+#yesButton{
+    cursor: pointer;
+    width: 50px;
+    border-radius: 6px;
+}
+
+#noButton{
+    cursor: pointer;
+    width: 50px;
+    border-radius: 6px;
+}
+
+#xClose1 {
+    position: absolute;
+    font-size: 25px;
+    top: -18px;
+    right: -8px;
+    cursor: pointer;
+}
+
+#popup-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+#xClose2 {
+    position: absolute;
+    font-size: 25px;
+    top: -18px;
+    right: -8px;
+    cursor: pointer;
+}
+
+#popup-content-start {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    opacity: 1;
+}
+#popup-content-stop {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    opacity: 1;
+}
+/*----------------- POPUP WINDOW -----------------*/
+
+/*----------------- Flush WINDOW -----------------*/
+#popup-flush {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+#popup-content-flush {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    opacity: 1;
+}
+
+#xClose3 {
+    position: absolute;
+    font-size: 25px;
+    top: -18px;
+    right: -8px;
+    cursor: pointer;
+}
+
+#flushwindowButton{
+    cursor: pointer;
+    width: 50px;
+    border-radius: 6px;
+}
